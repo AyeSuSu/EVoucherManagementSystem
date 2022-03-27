@@ -1,0 +1,600 @@
+{
+	"info": {
+		"_postman_id": "c1197ecc-d9a2-4037-a358-ba0cd1b9ee88",
+		"name": "EVoucherAndPromoCodeManagementSystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "User Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNo\": \"09798109478\",\r\n    \"userName\":\"AyeSuSuHan\",\r\n    \"password\": \"!@#$%123abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/user/register",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNo\": \"09798109478\",\r\n    \"userName\":\"AyeSuSuHan\",\r\n    \"password\": \"!@#$%123abc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/user/login",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment Method",
+			"item": [
+				{
+					"name": "Payment Method Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Bank Transfers\",\r\n    \"discountPercent\":0\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/paymentmethod/create",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"paymentmethod",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Method List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/paymentmethod/list",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"paymentmethod",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Method Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/paymentmethod/detail/paymentmethodid/{paymentmethodid}",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"paymentmethod",
+								"detail",
+								"paymentmethodid",
+								"{paymentmethodid}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Payment Method Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"e02e2583-28e3-458d-b25c-7c9b0a02fbc3\",\r\n    \"name\":\"Visa\",\r\n    \"discountPercent\":10\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/paymentmethod/update",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"paymentmethod",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Buy Type",
+			"item": [
+				{
+					"name": "Buy Type Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"isMyself\":true,\r\n    \"isGiftOthers\":false,\r\n    \"eVoucher_maxlimit\":10,\r\n    \"giftUser_maxlimit\":0\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/buytype/create",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"buytype",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Type List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/buytype/list",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"buytype",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Type Detail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/buytype/detail/buytypeid/{buytypeid}",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"buytype",
+								"detail",
+								"buytypeid",
+								"{buytypeid}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Type Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"458915ad-4d4c-4d33-b24e-058bd745989a\",\r\n    \"isMyself\":true,\r\n    \"isGiftOthers\":false,\r\n    \"eVoucher_maxlimit\":5,\r\n    \"giftUser_maxlimit\":0\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/buytype/update",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"buytype",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "EVoucher",
+			"item": [
+				{
+					"name": "EVoucher Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "NewYearGiftYoucher ",
+									"type": "default"
+								},
+								{
+									"key": "description",
+									"value": "Myanmar New Year celebration",
+									"type": "default"
+								},
+								{
+									"key": "expiryDate",
+									"value": "2022-04-17",
+									"type": "default"
+								},
+								{
+									"key": "imageFile",
+									"type": "file",
+									"src": "/D:/TingTong_Images/giftvoucher.jpg"
+								},
+								{
+									"key": "amount",
+									"value": "50000",
+									"type": "default"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "isActive",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "user_id",
+									"value": "f95e379a-e171-4928-a634-37218d6dd8aa",
+									"type": "default"
+								},
+								{
+									"key": "userName",
+									"value": "AyeSuSuHan",
+									"type": "default"
+								},
+								{
+									"key": "phoneNo",
+									"value": "09798109478",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/evoucher/create",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"evoucher",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVoucher List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg0NzYyMDEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.JDbdQE1a0AZZTIXs7E1H94_Rf6MBRqt9ehyRtJ2s-Z0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{eVoucherUrl}}/evoucher/list",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"evoucher",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVoucher Detail By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/evoucher/detail/evoucherid/{evoucherid}",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"evoucher",
+								"detail",
+								"evoucherid",
+								"{evoucherid}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVoucher Detail By PhoneNo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/evoucher/detail/phoneno/{phoneno}",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"evoucher",
+								"detail",
+								"phoneno",
+								"{phoneno}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVoucher List By Active Status(0,1)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/evoucher/list/isactive/0",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"evoucher",
+								"list",
+								"isactive",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVoucher Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"a66fedd7-393b-4aa3-9e85-e1cb01818bd1\",\r\n   \"phoneNo\":\"09798109478\",\r\n   \"title\":\"NewYearGiftYoucher \",\r\n   \"description\":\"Myanmar New Year celebration\",\r\n   \"amount\":50000,\r\n   \"expiryDate\":\"2022-04-17\",\r\n   \"isActive\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/evoucher/update",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"evoucher",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EVoucher Update Acive Status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phoneNo\": \"09798109478\",\r\n    \"isActive\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/evoucher/update/active/status",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"evoucher",
+								"update",
+								"active",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Purchase EVoucher",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"eVoucher_id\": \"a66fedd7-393b-4aa3-9e85-e1cb01818bd1\",\r\n    \"buyType_id\": \"f416e79c-4c9b-4e65-8473-a613577c19a0\",\r\n    \"paymentMethod_id\": \"e02e2583-28e3-458d-b25c-7c9b0a02fbc3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/purchaseevoucher/create",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"purchaseevoucher",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Promocode",
+			"item": [
+				{
+					"name": "Generate Promocode",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{promoCodeUrl}}/promocode/generate/phoneno/959798109478",
+							"host": [
+								"{{promoCodeUrl}}"
+							],
+							"path": [
+								"promocode",
+								"generate",
+								"phoneno",
+								"959798109478"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Used Promocode",
+			"item": [
+				{
+					"name": "ItemPurchase With Promocode",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"item\":\"Madnest Tshirt NewYear Collection\",\r\n    \"promocode\":\"004327USUYC\",\r\n    \"totalamount\":45000,\r\n    \"userid\":\"f95e379a-e171-4928-a634-37218d6dd8aa\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{eVoucherUrl}}/itempurchase/checkout",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"itempurchase",
+								"checkout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Purchase EVoucher History",
+			"item": [
+				{
+					"name": "Purchase EVoucher History By Status(usedstatus->all,used,unused)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{eVoucherUrl}}/purchaseevoucher/history/list/usedstatus/{usedstatus}",
+							"host": [
+								"{{eVoucherUrl}}"
+							],
+							"path": [
+								"purchaseevoucher",
+								"history",
+								"list",
+								"usedstatus",
+								"{usedstatus}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

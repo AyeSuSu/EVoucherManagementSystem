@@ -16,6 +16,7 @@ using StackExchange.Redis;
 
 namespace EVoucherManagementSystem.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class EVoucherController : ControllerBase

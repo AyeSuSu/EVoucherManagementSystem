@@ -32,7 +32,7 @@ namespace EVoucherManagementSystem.Controllers
         {
             return (this.myDbContext.Users.ToList());
         }
-
+        
         [HttpPost]
         [Route("register")]
         public async Task<IActionResult> RegisterUser([FromBody] UsersModel model)
@@ -115,5 +115,6 @@ namespace EVoucherManagementSystem.Controllers
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
     }
 }

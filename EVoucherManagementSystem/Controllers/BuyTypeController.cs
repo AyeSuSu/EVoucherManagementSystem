@@ -7,9 +7,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using EVoucherManagementSystem.Communication;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EVoucherManagementSystem.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class BuyTypeController : ControllerBase

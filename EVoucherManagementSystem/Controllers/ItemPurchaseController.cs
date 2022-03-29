@@ -12,9 +12,11 @@ using System.IO;
 using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EVoucherManagementSystem.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ItemPurchaseController : ControllerBase

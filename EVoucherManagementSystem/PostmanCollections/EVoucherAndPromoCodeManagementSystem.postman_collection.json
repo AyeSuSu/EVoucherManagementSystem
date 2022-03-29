@@ -70,11 +70,21 @@
 				{
 					"name": "Payment Method Create",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Bank Transfers\",\r\n    \"discountPercent\":0\r\n\r\n}",
+							"raw": "{\r\n    \"name\":\"KBZ Pay\",\r\n    \"discountPercent\":0\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -97,6 +107,16 @@
 				{
 					"name": "Payment Method List",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -115,6 +135,16 @@
 				{
 					"name": "Payment Method Detail",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -135,11 +165,21 @@
 				{
 					"name": "Payment Method Update",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"id\":\"e02e2583-28e3-458d-b25c-7c9b0a02fbc3\",\r\n    \"name\":\"Visa\",\r\n    \"discountPercent\":10\r\n\r\n}",
+							"raw": "{\r\n    \"id\":\"408ace98-8f07-45d1-ab4b-e8f12b5befdc\",\r\n    \"name\":\"KBZ Pay\",\r\n    \"discountPercent\":1\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -167,6 +207,16 @@
 				{
 					"name": "Buy Type Create",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -194,6 +244,16 @@
 				{
 					"name": "Buy Type List",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -212,6 +272,16 @@
 				{
 					"name": "Buy Type Detail",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -232,6 +302,16 @@
 				{
 					"name": "Buy Type Update",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -264,6 +344,16 @@
 				{
 					"name": "EVoucher Create",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -342,7 +432,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg0NzYyMDEsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.JDbdQE1a0AZZTIXs7E1H94_Rf6MBRqt9ehyRtJ2s-Z0",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
 									"type": "string"
 								}
 							]
@@ -371,6 +461,16 @@
 				{
 					"name": "EVoucher Detail By Id",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -391,6 +491,16 @@
 				{
 					"name": "EVoucher Detail By PhoneNo",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -411,10 +521,20 @@
 				{
 					"name": "EVoucher List By Active Status(0,1)",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{eVoucherUrl}}/evoucher/list/isactive/0",
+							"raw": "{{eVoucherUrl}}/evoucher/list/isactive/1",
 							"host": [
 								"{{eVoucherUrl}}"
 							],
@@ -422,7 +542,7 @@
 								"evoucher",
 								"list",
 								"isactive",
-								"0"
+								"1"
 							]
 						}
 					},
@@ -431,6 +551,16 @@
 				{
 					"name": "EVoucher Update",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -458,6 +588,16 @@
 				{
 					"name": "EVoucher Update Acive Status",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [],
 						"body": {
@@ -487,6 +627,16 @@
 				{
 					"name": "Purchase EVoucher",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -544,6 +694,16 @@
 				{
 					"name": "ItemPurchase With Promocode",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -576,6 +736,16 @@
 				{
 					"name": "Purchase EVoucher History By Status(usedstatus->all,used,unused)",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NDg2MTA3OTAsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzYxIiwiYXVkIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNjEifQ.QvLOuWh4u0kyp_frZamDjAGC5-i5Ueun5_9vm6THkH0",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
